@@ -1,0 +1,26 @@
+{
+  "name": "astrodraw.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "astrochart.min.js",
+  "scripts": {
+    "build": "tailwindcss --postcss -o tailwind.css",
+    "dev": "TAILWIND_MODE=watch tailwindcss --postcss -o tailwind.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroDraw/astrodraw.github.io.git"
+  },
+  "author": "Arthur Fücher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AstroDraw/astrodraw.github.io/issues"
+  },
+  "homepage": "https://github.com/AstroDraw/astrodraw.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}

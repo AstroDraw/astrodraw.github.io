@@ -4,9 +4,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AstroDraw</title>
+	<link rel="stylesheet" href="tailwind.css" />
+	<title>AstroChart</title>
+	<script src="./astrochart.min.js"></script>
+	<script>
+	window.onload = function(){	
+		const data = {
+			"planets":{"Moon":[0], "Sun":[30], "Mercury":[60] },
+			"cusps":[300, 340, 30, 60, 75, 90, 116, 172, 210, 236, 250, 274]	
+		}
+		const chart = new astrology.Chart( 'paper', 600, 600);
+		chart.radix( data );					
+	};			
+</script>
 </head>
-<body>
-  <h1>AstroChart - A free and open-source JavaScript library for generating SVG charts to display planets in astrology.</h1>
+<body class="container px-4">
+  <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900">AstroChart</h1>
+	<p>A free and open-source JavaScript library for generating SVG charts to display planets in astrology.</p>
+	<div id="paper" class="w-min mx-auto"></div>
 </body>
 </html>
