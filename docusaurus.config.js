@@ -91,7 +91,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AstroChart. Built with <3 and Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AstroChart. Built with love and Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
