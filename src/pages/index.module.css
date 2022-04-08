@@ -10,6 +10,11 @@
   overflow: hidden;
 }
 
+.chart {
+  margin: 0 auto;
+  width: min-content;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
