@@ -1,31 +1,43 @@
 {
-  "name": "astrodraw.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "astrochart.min.js",
+  "name": "astrochart",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "build": "tailwindcss --postcss -o tailwind.css",
-    "init-tailwind": "cross-env TAILWIND_MODE=watch tailwindcss --postcss -o tailwind.css --watch",
-    "init-static-server": "browser-sync start --config bs-config.js",
-    "dev": "concurrently \"npm:init-*\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AstroDraw/astrodraw.github.io.git"
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.18",
+    "@docusaurus/preset-classic": "2.0.0-beta.18",
+    "@mdx-js/react": "^1.6.22",
+    "clsx": "^1.1.1",
+    "prism-react-renderer": "^1.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "author": "Arthur Fücher",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AstroDraw/astrodraw.github.io/issues"
-  },
-  "homepage": "https://github.com/AstroDraw/astrodraw.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "browser-sync": "^2.27.5",
-    "concurrently": "^6.2.1",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
+    "@docusaurus/module-type-aliases": "2.0.0-beta.18",
+    "@tsconfig/docusaurus": "^1.0.5",
+    "typescript": "^4.6.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
