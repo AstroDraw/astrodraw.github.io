@@ -2,46 +2,63 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
-
-Let's discover **Docusaurus in less than 5 minutes**. 
-
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+# Getting Started
 
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- latest version of AstroChart: download the release directly from [github](https://github.com/AstroDraw/AstroChart/releases). You will find the normal version and the minified.
 
-## Generate a new site
+## Adding AstroChart to your project
 
-Generate a new Docusaurus site using the **classic template**.
+Add astrochart library in your folder struct, then import it into your html using `script` tag.
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```html
+<script src="js/astrochart.min.js"></script>
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Start using
 
-## Start your site
+First you need to create a node in the html where the svg chart will be created:
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+```html
+<div id="paper"></div>
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+We will use the `id` to let the library know, where to create the chart.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+The next step is create the `Chart` object, for this we need to pass:
+ - `id` of the node that will be the container of the svg;
+ - `width` of the svg chart;
+ - `height` of the svg chart; 
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+```js
+  var chart = new astrology.Chart( 'paper', 800, 800);
+```
+
+### Drawing a radix chart
+
+The chart object has the `radix` method, it receives a `data` object. It should have the following properties:
+ - `planets`: object containing with the key as an astrological point and the value an array containing the degree of the point
+ - `cusps`: array with 12 positions, containing all houses cusps degrees 
+
+```js
+//data example
+var data = {
+  "planets":{
+    "Pluto":[63], 
+    "Neptune":[110], 
+    "Uranus":[318], 
+    "Saturn":[201], 
+    "Jupiter":[192], 
+    "Mars":[210], 
+    "Moon":[268], 
+    "Sun":[281],
+    "Mercury":[312], 
+    "Venus":[330]},
+  "cusps":[296, 350, 30, 56, 75, 94, 116, 170, 210, 236, 255, 274]			
+};
+
+var radix = chart.radix( data );
+```

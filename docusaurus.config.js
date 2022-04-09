@@ -27,7 +27,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/AstroDraw/astrodraw.github.io/tree/main/',
         },
         blog: false,
         theme: {
@@ -51,7 +51,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Getting started',
           },
           {
             href: 'https://github.com/AstroDraw',
@@ -67,7 +67,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Getting started',
                 to: '/intro',
               },
             ],
@@ -88,6 +88,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/astrodraw/astrochart',
               },
+              {
+                label: 'Buy me a coffee',
+                href: 'https://ko-fi.com/afucher'
+              }
             ],
           },
         ],
