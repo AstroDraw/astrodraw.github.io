@@ -2,6 +2,12 @@
 sidebar_position: 1
 ---
 
+:::caution
+
+The documentation is under construction. If you want to contribute, please check [our repo](https://github.com/AstroDraw/astrodraw.github.io)
+
+:::  
+
 # Getting Started
 
 ### What you'll need
