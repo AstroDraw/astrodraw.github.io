@@ -10,18 +10,18 @@ The documentation is under construction for the new version (v3). If you want to
 
 # Getting Started
 
-### What you'll need
+## Installation
 
-- latest version of AstroChart: download the release directly from [github](https://github.com/AstroDraw/AstroChart/releases). You will find the normal version and the minified.
+### NPM
 
-## Adding AstroChart to your project
-
-Add astrochart library in your folder struct, then import it into your html using `script` tag.
-
-```html
-<script src="js/astrochart.min.js"></script>
+```bash
+npm i -S @astrodraw/astrochart
 ```
 
+### CDN
+```html
+<script src="https://unpkg.com/@astrodraw/astrochart"></script>
+```
 
 ## Start using
 
@@ -40,7 +40,7 @@ The next step is create the `Chart` object, for this we need to pass:
 
 
 ```js
-  var chart = new astrology.Chart( 'paper', 800, 800);
+  var chart = new Chart( 'paper', 800, 800);
 ```
 
 ### Drawing a radix chart
