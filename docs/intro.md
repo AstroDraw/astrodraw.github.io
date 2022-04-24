@@ -4,7 +4,7 @@ sidebar_position: 1
 
 :::caution
 
-The documentation is under construction. If you want to contribute, please check [our repo](https://github.com/AstroDraw/astrodraw.github.io)
+The documentation is under construction for the new version (v3). If you want to contribute, please check [our repo](https://github.com/AstroDraw/astrodraw.github.io)
 
 :::  
 

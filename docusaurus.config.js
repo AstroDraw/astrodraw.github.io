@@ -16,8 +16,6 @@ const config = {
   organizationName: 'astrodraw', // Usually your GitHub org/user name.
   projectName: 'astrochart', // Usually your repo name.
 
-  scripts: ['./js/astrochart.min.js'],
-
   presets: [
     [
       'classic',

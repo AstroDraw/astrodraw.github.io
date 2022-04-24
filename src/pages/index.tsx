@@ -5,12 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-declare global {
-  interface Window {
-    astrology: any;
-  }
-}
+import Chart from '@astrodraw/astrochart';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -19,7 +14,7 @@ function HomepageHeader() {
       "planets":{"Moon":[0], "Sun":[30], "Mercury":[60] },
       "cusps":[300, 340, 30, 60, 75, 90, 116, 172, 210, 236, 250, 274]	
     }
-    const chart = new window.astrology.Chart( 'paper', 600, 600);
+    const chart = new Chart( 'paper', 600, 600);
     chart.radix( data );	
   })
 
