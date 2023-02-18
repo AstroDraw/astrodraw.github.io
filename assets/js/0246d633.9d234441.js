@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkastrochart=self.webpackChunkastrochart||[]).push([[132],{3769:function(s){s.exports=JSON.parse('{"plugin":{"name":"docusaurus-plugin-content-docs","id":"default"}}')}}]);
