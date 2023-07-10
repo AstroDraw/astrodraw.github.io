@@ -15,7 +15,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@astrodraw/astrochart": "^3.0.0-rc1",
+    "@astrodraw/astrochart": "^3.0.0",
     "@docusaurus/core": "2.3.1",
     "@docusaurus/preset-classic": "2.3.1",
     "@mdx-js/react": "^1.6.22",
